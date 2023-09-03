@@ -15,13 +15,38 @@
     <h1>Etch-a-skech</h1>
     <div class="header">
         <h6>Select the size</h6>
-        <button  class="btn btn-danger" id="popup">Select</button>
+        <button  class="btn btn-danger" id="popup" onclick="">Select</button>
     </div>
+    
+    <p id="message"></p>
+
+    <p id="drow"></p>
+
+
     <div class="board"></div>
     <div class="footer">
-        <button class="btn btn-dark">Black</button>
-        <button class="btn btn-warning">Random</button>
-        <button class="btn btn-primary">Reset</button>
+        <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+        <button class="btn btn-warning " onclick="setColor('yellow')"
+        >Yellow</button>
+        <!-- add color menu in which give 20 colour with above syntax-->
+        <button class="btn btn-primary" onclick="setColor('blue')"
+        >Blue</button>
+        <button class="btn btn-success" onclick="setColor('green')"
+        >Green</button>
+        <button class="btn btn-danger" onclick="setColor('red')"
+        >Red</button>
+        <button class="btn btn-secondary" onclick="setColor('grey')"
+        >Grey</button>
+        <button class="btn btn-info" onclick="setColor('cyan')"
+        >Cyan</button>
+
+        
+        <button class="btn btn-white border-black"
+            onclick="setColor('white')"
+        >Eraser</button>
+
+        <!-- rest button -->
+        <button class="btn btn-dark" onclick="clearBoard()">Reset</button>
     </div>
 </body>
 
