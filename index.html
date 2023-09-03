@@ -6,18 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Skech</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary
+    ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://portfolio-of-the-pavan.netlify.app/">Pavan Kamthane</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://portfolio-of-the-pavan.netlify.app/">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Pavan-Kamthane"><i class="bi bi-github"
+                                style="font-size: 20px;"
+                        ></i></a>
+                    </li>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- nav end -->
     <h1>Etch-a-skech</h1>
     <div class="header">
         <h6>Select the size</h6>
-        <button  class="btn btn-danger" id="popup" onclick="">Select</button>
+        <button class="btn btn-danger" id="popup" onclick="">Select</button>
     </div>
-    
+
     <p id="message"></p>
 
     <p id="drow"></p>
@@ -26,28 +55,26 @@
     <div class="board"></div>
     <div class="footer">
         <button class="btn btn-dark" onclick="setColor('black')">Black</button>
-        <button class="btn btn-warning " onclick="setColor('yellow')"
-        >Yellow</button>
+        <button class="btn btn-warning " onclick="setColor('yellow')">Yellow</button>
         <!-- add color menu in which give 20 colour with above syntax-->
-        <button class="btn btn-primary" onclick="setColor('blue')"
-        >Blue</button>
-        <button class="btn btn-success" onclick="setColor('green')"
-        >Green</button>
-        <button class="btn btn-danger" onclick="setColor('red')"
-        >Red</button>
-        <button class="btn btn-secondary" onclick="setColor('grey')"
-        >Grey</button>
-        <button class="btn btn-info" onclick="setColor('cyan')"
-        >Cyan</button>
+        <button class="btn btn-primary" onclick="setColor('blue')">Blue</button>
+        <button class="btn btn-success" onclick="setColor('green')">Green</button>
+        <button class="btn btn-danger" onclick="setColor('red')">Red</button>
+        <button class="btn btn-secondary" onclick="setColor('grey')">Grey</button>
+        <button class="btn btn-info" onclick="setColor('cyan')">Cyan</button>
+        <button class="btn " style="background-color: pink;" onclick="setColor('pink')">Pink</button>
+        <button class="btn " style="background-color: brown; color:white;" onclick="setColor('brown')">Brown</button>
+        <button class="btn " style="background-color: purple;color:white;" onclick="setColor('purple')">Purple</button>
+        <button class="btn " style="background-color: orange;" onclick="setColor('orange')">Orange</button>
+        <button class="btn " style="background-color: maroon;color:white;" onclick="setColor('maroon')">Maroon</button>
+        <button class="btn " style="background-color: olive;color:white;" onclick="setColor('olive')">Olive</button>
 
-        
-        <button class="btn btn-white border-black"
-            onclick="setColor('white')"
-        >Eraser</button>
 
-        <!-- rest button -->
-        <button class="btn btn-dark" onclick="clearBoard()">Reset</button>
+        <!-- reset button -->
+        <button class="btn btn-light border-black" onclick="clearBoard()">Reset</button>
     </div>
+
+
 </body>
 
 </html>

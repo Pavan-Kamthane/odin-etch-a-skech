@@ -1,9 +1,16 @@
 body{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+nav{
+    margin-bottom: 20px;
+}
+
+
 
 .header {
     display: flex;
@@ -14,14 +21,15 @@ body{
 }
 
 .footer{
-    display: flex;
-    align-items: center;
-    width: 400px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* grid  */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
     width: 500px;
+    height: 200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     margin-top: 20px;
-    gap: 10px;
 }
 
 .board{
@@ -29,4 +37,48 @@ body{
     height: 500px;
     display: grid;
     border: 1px solid black;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        width: 300px;
+    }
+    nav ul{
+        width: 100%;
+    }
+
+
+    .header{
+        width: 300px;
+    }
+    .board{
+        width: 300px;
+        height: 300px;
+    }
+    .footer{
+        width: 300px;
+        height: 100px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    
+}
+
+@media screen and (max-width:300px) {
+    .header{
+        width: 200px;
+    }
+    .board{
+        width: 200px;
+        height: 200px;
+    }
+    .footer{
+        width: 200px;
+        height: 100px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
 }
